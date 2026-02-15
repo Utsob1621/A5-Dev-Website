@@ -15,14 +15,13 @@ function getElementById (id) {
         weekday : 'long'
       })}
       <br>
-    <span class = "text-base font-bold">${new Date().toLocaleDateString('en-Gb', {
+    <span class = "text-base font-semibold">${new Date().toLocaleDateString('en-Gb', {
         day : 'numeric',
         month : 'long',
         year : 'numeric'
       })}</span> 
     </p>
   `
-
   dateAndTime.appendChild(datetime);
 
 // task btn
@@ -62,5 +61,8 @@ for (let i = 0; i < taskButtons.length; i++) {
       </p>
     `
     noticeContainer.appendChild(notice);
+
+    taskBtn.disabled = true;
+    taskBtn.innerText = "Completed"
   })
 }
