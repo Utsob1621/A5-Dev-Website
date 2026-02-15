@@ -3,6 +3,28 @@ function getElementById (id) {
   return document.getElementById(id);
 }
 
+// const dateAndTime make a dynamic
+  const dateAndTime = document.getElementById("date-and-time");
+
+  const datetime = document.createElement("p");
+  // datetime.classList.add();
+
+  datetime.innerHTML = `
+    <p>
+    ${new Date().toLocaleDateString('en-Gb', {
+        weekday : 'long'
+      })}
+      <br>
+    <span class = "text-base font-bold">${new Date().toLocaleDateString('en-Gb', {
+        day : 'numeric',
+        month : 'long',
+        year : 'numeric'
+      })}</span> 
+    </p>
+  `
+
+  dateAndTime.appendChild(datetime);
+
 // task btn
 
 const taskButtons = document.getElementsByClassName("task-btn");
