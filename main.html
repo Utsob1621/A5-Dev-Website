@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font -->
+    <style>
+      .poppins-thin {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-green-200 py-4 h-screen">
+    <header class="w-full max-w-screen-2xl mx-auto bg-white rounded-xl mb-5">
+      <!-- logo and band -->
+      <nav class="flex justify-between items-center">
+        <div class="flex items-center p-5 gap-3">
+          <img class="" src="./assets/logo.png" alt="" />
+          <h1 class="text-3xl">Dev <span class="font-bold">Board</span></h1>
+        </div>
+        <button id ="back-to-desk" class="btn btn-primary mr-5"
+          >Back to Desk</button
+        >
+      </nav>
+    </header>
+    <main></main>
+
+    <script>
+      document
+        .getElementById("back-to-desk")
+        .addEventListener("click", function () {
+          window.location.href = "./index.html";
+        });
+    </script>
+  </body>
+</html>

@@ -4,25 +4,25 @@ function getElementById (id) {
 }
 
 // const dateAndTime make a dynamic
-  const dateAndTime = document.getElementById("date-and-time");
+const dateAndTime = document.getElementById("date-and-time");
 
-  const datetime = document.createElement("p");
-  // datetime.classList.add();
+const datetime = document.createElement("p");
+// datetime.classList.add();
 
-  datetime.innerHTML = `
+datetime.innerHTML = `
     <p>
     ${new Date().toLocaleDateString('en-Gb', {
-        weekday : 'long'
-      })}
+  weekday: 'long'
+})}
       <br>
     <span class = "text-base font-semibold">${new Date().toLocaleDateString('en-Gb', {
-        day : 'numeric',
-        month : 'long',
-        year : 'numeric'
-      })}</span> 
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+})}</span> 
     </p>
   `
-  dateAndTime.appendChild(datetime);
+dateAndTime.appendChild(datetime);
 
 // task btn
 
@@ -66,3 +66,9 @@ for (let i = 0; i < taskButtons.length; i++) {
     taskBtn.innerText = "Completed"
   })
 }
+
+
+
+document.getElementById("today-btn").addEventListener("click", function () {
+  window.location.href = "./main.html";
+});
