@@ -81,11 +81,10 @@ for (let i = 0; i < taskButtons.length; i++) {
       </p>
     `;
 
-    noticeContainer.appendChild(finalNotice);
+      noticeContainer.appendChild(finalNotice);
     }
   });
 }
-
 
 document.getElementById("today-btn").addEventListener("click", function () {
   window.location.href = "./main.html";

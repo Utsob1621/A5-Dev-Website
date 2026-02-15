@@ -18,7 +18,7 @@
     </style>
   </head>
 
-  <body class="bg-green-200 py-4 h-screen">
+  <body class="bg-green-200 py-4 overflow-y: scroll;">
     <header class="w-full max-w-screen-2xl mx-auto bg-white rounded-xl mb-5">
       <!-- logo and band -->
       <nav class="flex justify-between items-center">
@@ -26,13 +26,77 @@
           <img class="" src="./assets/logo.png" alt="" />
           <h1 class="text-3xl">Dev <span class="font-bold">Board</span></h1>
         </div>
-        <button id ="back-to-desk" class="btn btn-primary mr-5"
-          >Back to Desk</button
-        >
+        <button id="back-to-desk" class="btn btn-primary mr-5">
+          Back to Desk
+        </button>
       </nav>
     </header>
-    <main></main>
+    <main class="w-full max-w-screen-2xl mx-auto">
+      <h1 class="text-center font-bold text-xl mb-5">Blogs</h1>
 
+      <!-- Question-divs -->
+      <div>
+        <!-- Question-1 -->
+        <div class="card-body bg-white rounded-xl mb-5">
+          <p class="font-semibold text-base">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </p>
+          <div class="border-t-2 border-dashed border-gray-300">
+            <p class="pt-3 font-medium text-sm"></p>
+          </div>
+        </div>
+
+        <!-- Question-2 -->
+
+        <div class="card-body bg-white rounded-xl mb-5">
+          <p class="font-semibold text-base">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </p>
+          <div class="border-t-2 border-dashed border-gray-300">
+            <p class="pt-3"></p>
+          </div>
+        </div>
+
+        <!-- Question-3 -->
+        <div class="card-body bg-white rounded-xl mb-5">
+          <p class="font-semibold text-base">
+            Question-3: What is event delegation in the DOM?
+          </p>
+          <div class="border-t-2 border-dashed border-gray-300">
+            <p class="pt-3"></p>
+          </div>
+        </div>
+
+        <!-- Question-4 -->
+        <div class="card-body bg-white rounded-xl mb-5">
+          <p class="font-semibold text-base">
+            Question-4: What is event bubbling in the DOM?
+          </p>
+          <div class="border-t-2 border-dashed border-gray-300">
+            <p class="pt-3">
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </p>
+          </div>
+        </div>
+
+        <!-- Question-5 -->
+        <div class="card-body bg-white rounded-xl">
+          <p class="font-semibold text-base">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </p>
+          <div class="border-t-2 border-dashed border-gray-300">
+            <p class="pt-3">
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <script>
       document
         .getElementById("back-to-desk")
