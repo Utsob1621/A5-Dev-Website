@@ -84,6 +84,10 @@ for (let i = 0; i < taskButtons.length; i++) {
       noticeContainer.appendChild(finalNotice);
     }
   });
+
+  document.getElementById("clear-btn").addEventListener("click", function () {
+    noticeContainer.innerHTML = "";
+  });
 }
 
 document.getElementById("today-btn").addEventListener("click", function () {
