@@ -84,9 +84,8 @@
           </p>
           <div class="border-t-2 border-dashed border-gray-300">
             <p class="pt-3">
-              Answer = innerHTML ও innerText এবং textContent আর মধ্যে যা
-              পার্থক্য :<br />
-              1. Event Delegation ব্যবহার করে আমরা html এ কোনো parent element-এ একটি মাত্র event listener বসাই। এরপর event bubbling-এর মাধ্যমে child element-এ কোনো event ঘটলে সেটা parent পর্যন্ত পৌঁছে যায়। আমরা event.target ব্যবহার করে বুঝতে পারি কোন child element-এ event ঘটেছে। এতে কাজ করতে সুবিধা হয় ও কাজ ভালো হয়। <br />
+              Answer = Event delegation হছে :<br />
+              1.Event Delegation ব্যবহার করে আমরা html এ কোনো parent element-এ event handler ব্যবহার করে child element এর ইভেন্ট হ্যান্ডল করতে পারি। এইচটিএমএল এ কোনো parent element -এর <br> যখন অনেকগুলো child element থাকে, এবং প্রত্যেকটির জন্য আলাদা event handler দেওয়া সম্ভব হয় না, তখন event delegation ব্যবহার করা হয়। আমরা event.target ব্যবহার করে বুঝতে পারি কোন <br> child element -এ event ঘটেছে।
             </p>
           </div>
         </div>
@@ -98,8 +97,7 @@
           </p>
           <div class="border-t-2 border-dashed border-gray-300">
             <p class="pt-3">
-              Question-1: What are the different ways to select an element in
-              the DOM?
+              
             </p>
           </div>
         </div>
