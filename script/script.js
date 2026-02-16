@@ -93,3 +93,55 @@ for (let i = 0; i < taskButtons.length; i++) {
 document.getElementById("today-btn").addEventListener("click", function () {
   window.location.href = "./main.html";
 });
+
+
+
+// bg dynamic color 
+
+const bgColor = document.getElementById("bg-color");
+const ColorBtn = document.getElementById("color-d-btn");
+
+
+let count = 0;
+
+ColorBtn.addEventListener("click", function(){
+  if (count === 0 ){
+    bgColor.style.backgroundColor = "lightgreen";
+    count = 1;
+  }
+
+  else if (count === 1){
+    bgColor.style.backgroundColor = "lightblue";
+    count = 2;
+  }
+
+  else if(count === 2){
+    bgColor.style.backgroundColor = "lightyellow"
+    count = 3;
+  }
+
+  else if (count === 3) {
+    bgColor.style.backgroundColor = "lavender"
+    count = 4;
+  }
+
+  else if (count === 4) {
+    bgColor.style.backgroundColor = "lightpink"
+    count = 5;
+  }
+
+  else if (count === 5) {
+    bgColor.style.backgroundColor = "lightCyan"
+    count = 6;
+  }
+
+else if (count === 6) {
+    bgColor.style.backgroundColor = "aliceblue"
+    count = 7;
+  }
+  
+  else {
+      bg.style.backgroundColor = "white";
+      count = 0;
+    }
+})
