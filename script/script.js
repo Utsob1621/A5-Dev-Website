@@ -136,7 +136,7 @@ ColorBtn.addEventListener("click", function(){
   }
 
 else if (count === 6) {
-    bgColor.style.backgroundColor = "aliceblue"
+    bgColor.style.backgroundColor = "maroon"
     count = 7;
   }
   
