@@ -135,9 +135,14 @@ ColorBtn.addEventListener("click", function(){
     count = 6;
   }
 
-else if (count === 6) {
-    bgColor.style.backgroundColor = "maroon"
+  else if (count === 6) {
+    bgColor.style.backgroundColor = "SlateBlue"
     count = 7;
+  }
+
+else if (count === 7) {
+    bgColor.style.backgroundColor = "maroon"
+    count = 8;
   }
   
   else {
